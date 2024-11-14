@@ -16,13 +16,13 @@ This project is a Weather API that fetches weather data from third-party sources
 
 ## Tools & Libraries
 
-- Flask: A lightweight web framework for building the API.
-- Flask-Limiter: Used for rate-limiting API request.
-- Redis: A database used for caching to imporve performance.
-- urllib3: A HTTP library for making requests to external APIs.
-- certifi: Provides SSL certificates to ensure secure HTTP requests.
-- Python-dotenv: Loads environment variables from a `.env` file to securely store sensituve information like API keys.
-- Logging: Python's built-in logging module for tracking errors and application events.
+- **Flask**: A lightweight web framework for building the API.
+- **Flask-Limiter**: Used for rate-limiting API request.
+- **Redis**: A database used for caching to imporve performance.
+- **urllib3**: A HTTP library for making requests to external APIs.
+- **certifi**: Provides SSL certificates to ensure secure HTTP requests.
+- **Python-dotenv**: Loads environment variables from a `.env` file to securely store sensituve information like API keys.
+- **Logging**: Python's built-in logging module for tracking errors and application events.
 
 ## Browser Interface(HTML)
 
@@ -31,9 +31,9 @@ This Weather API includes a user-friendly HTML interface that allows you to easi
 1. Accessing the interface:
    Once the Weather API server is running, you can open your browser and nevigate to :
 
-```shell
-http://127.0.0.1:5500
-```
+   ```shell
+   http://127.0.0.1:5500
+   ```
 
 2. Using the interface:
 
@@ -52,26 +52,26 @@ http://127.0.0.1:5500
 
 To get started with this project, clone the repository to your local machine:
 
-```shell
-# Clone the repository
-git clone https://github.com/HsinLing-Chang/Weather-API.git
+    ```shell
+    # Clone the repository
+    git clone https://github.com/HsinLing-Chang/Weather-API.git
 
-# Navigate into the cloned project directory
-cd Weather-API
-```
+    # Navigate into the cloned project directory
+    cd Weather-API
+    ```
 
 ## How to run
 
 Before accessing the browser interface, you need to start the application by running app.py from the command line.
 
-1. Start the Flask Server
+1. Start the Flask Server:
    Open the terminal and nevigate to the project directory where app.py is located.
 
-```shell
-python app.py
-```
+   ```shell
+   python app.py
+   ```
 
-This will start the server on 127.0.0.1 (localhost) at port 5500.
+   This will start the server on 127.0.0.1 (localhost) at port 5500.
 
-2. Open the Browser Interface
+2. Open the Browser Interface:
    After starting the server, open your web browser and go to `http://127.0.0.1:5000` to access the HTML interface.
