@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather API</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',
+    filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="API">
+      <div class="headers">
+        <h1>Weather API</h1>
+        <p>Help you easily get daily weather information</p>
+      </div>
+      <div class="form">
+        <form action="/weather" method="GET">
+          <div class="location input">
+            <label for="location">Location*: </label>
+            <input id="location" name="location" type="text" required />
+          </div>
+          <div class="city input">
+            <label for="city">City : </label>
+            <input id="city" name="city" type="text" />
+          </div>
+          <div class="start-date input">
+            <label for="start">Start date： </label>
+            <input id="start" name="start" type="date" />
+          </div>
+          <div class="end-date input">
+            <label for="end">End date： </label>
+            <input id="end" name="end" type="date" />
+          </div>
+          <p style="font-size: medium; color: rgb(0, 0, 0)">
+            *only 15-day forecast
+          </p>
+          <div class="daily-data">
+            <label for="daily-data">Daily data only</label>
+            <input
+              id="daily-data"
+              name="daily-data"
+              type="checkbox"
+              value="days"
+            />
+          </div>
+
+          <button type="submit" class="btn">Search</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
