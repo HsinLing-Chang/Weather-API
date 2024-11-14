@@ -21,9 +21,9 @@ logging.basicConfig(
 )
 
 # env setting
-redis_host = os.getenv("HOST")
-redis_port = os.getenv("PORT")
-redis_password = os.getenv("PASSWORD")
+redis_host = os.getenv("REDIS_HOST")
+redis_port = os.getenv("REDIS_PORT")
+redis_password = os.getenv("REDIS_PASSWORD")
 API_KEY = os.getenv("API_KEY")
 
 r = redis.Redis(

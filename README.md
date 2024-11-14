@@ -2,11 +2,11 @@
 
 Sample solution for the [weather API](https://roadmap.sh/projects/weather-api-wrapper-service) challenge from [roadmap.sh](https://roadmap.sh/roadmaps).
 
-## Intoduction
+## Introduction
 
 This project is a Weather API that fetches weather data from third-party sources. Its uses Flask Limiter for rate limiting and Redis caching for imporved performance. Sensitive information is stored using environment variables, and errors are logged with Python's logging module.
 
-## Feature
+## Features
 
 - **Weather Data Retrival**: Fetches real-time weather information from third-party service(Visual Crossing Weather API).
 - **Caching**: Implements Redis caching to improve performance by reducing redundant data requests.
@@ -60,6 +60,21 @@ git clone https://github.com/HsinLing-Chang/Weather-API.git
 cd Weather-API
 ```
 
+## Setting Up environment variables
+
+1. Create a `.env`file in the root directory of the project if it doesn’t exist.
+2. Add the Redis and API Key Configuration to the `.env` file.
+   This will allow the application to connect to Redis and access the weather API.
+   Here’s an example configuration:
+   ```shell
+   # Redis Configuration
+   REDIS_HOST=your_redis_host
+   REDIS_PORT=your_redis_port
+   REDIS_PASSWORD=your_redis_password
+   # API Key
+   API_KEY=your_api_key
+   ```
+
 ## How to run
 
 Before accessing the browser interface, you need to start the application by running app.py from the command line.
@@ -74,4 +89,4 @@ Before accessing the browser interface, you need to start the application by run
    This will start the server on 127.0.0.1 (localhost) at port 5500.
 
 2. Open the Browser Interface:
-   After starting the server, open your web browser and go to `http://127.0.0.1:5000` to access the HTML interface.
+   After starting the server, open your web browser and go to `http://127.0.0.1:5500` to access the HTML interface.
