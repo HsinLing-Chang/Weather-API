@@ -52,13 +52,13 @@ This Weather API includes a user-friendly HTML interface that allows you to easi
 
 To get started with this project, clone the repository to your local machine:
 
-    ```shell
-    # Clone the repository
-    git clone https://github.com/HsinLing-Chang/Weather-API.git
+```shell
+# Clone the repository
+git clone https://github.com/HsinLing-Chang/Weather-API.git
 
-    # Navigate into the cloned project directory
-    cd Weather-API
-    ```
+# Navigate into the cloned project directory
+cd Weather-API
+```
 
 ## How to run
 
